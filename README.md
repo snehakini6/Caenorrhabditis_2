@@ -10,3 +10,22 @@ Size of genome
  Estimated protein-coding genes
  Where to access the genome sequence and at what coverage it was sequenced
  Any other interesting facts about the genome that turn up
+
+
+How to generate the reverse complement of a sequence:
+1. Load the emboss and seqtk modules into your workspace:
+     module load emboss
+     module load seqtk
+2. Navigate to the 'GCF_000002985.6' directory:
+     cd ncbi_dataset/data/GCF_000002985.6/
+3. 'infoseq' to see what the genome file contains:
+     infoseq GCF_000002985.6_WBcel235_genomic.fna
+4. Extract one fasta sequence from the file:
+     echo NC_003279.8 > GCF_000002985.6.txt
+5. Extract the sequence from the larger file and store it in a new file:
+     seqtk subseq GCF_000002985.6_WBcel235_genomic.fna GCF_000002985.6.txt > NC_003279.8.txt
+6. Generate the reverse complement of the sequence and store it in a new file:
+     revseq NC_003279.8.txt NC_003279.8.rev
+
+
+     
