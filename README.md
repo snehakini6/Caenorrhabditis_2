@@ -27,5 +27,8 @@ How to generate the reverse complement of a sequence:
 6. Generate the reverse complement of the sequence and store it in a new file:
      revseq NC_003279.8.txt NC_003279.8.rev
 
+[Reverse Seq.pdf](https://github.com/snehakini6/Caenorrhabditis_2/files/14157628/Reverse.Seq.pdf)
+
+![alt text](https://github.com/snehakini6/Caenorrhabditis_2/assets/138410658/9c898f3a-a559-468b-916d-b4abcb6cd57f)
 
      
